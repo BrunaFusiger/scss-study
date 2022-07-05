@@ -3,4 +3,5 @@ I created this project in Matheus Battisti's "Sass course". With this project I 
 
 PS.: The design is 100% responsive
 
-[127 0 0 1_5555_](https://user-images.githubusercontent.com/90523641/177417258-8fe7091e-0b6c-4421-93d8-9f9d6ba0ca91.png)
+![127 0 0 1_5555_](https://user-images.githubusercontent.com/90523641/177417681-c5a5591a-7b68-45f3-886e-654452b8f150.png)
+
