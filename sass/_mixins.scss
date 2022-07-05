@@ -1,0 +1,36 @@
+@use 'variables';
+
+@mixin container {
+	max-widht: variables.$container-widht; /*(variavel criada em "_variables.sass")*/
+	padding: 1.5rem 0;
+	margin: 0 2em;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin bg-img($img) { //o $img é o parâmetro
+    background-image: url('../img/#{$img}');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%); //deixa img preta e branco
+    transition: .6s;
+
+
+    &:hover {
+        background-size: 110%; //zoom de 10% na imagem
+        filter: grayscale(0%); //cor normal
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/#{$img}'); 
+        //coloca um filtro escurinho na frente da img
+    }
+}
+
+@mixin mobile {
+    @media(max-width: 425px) {
+        @content
+    }
+}
